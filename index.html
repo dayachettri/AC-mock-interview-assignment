@@ -1,11 +1,780 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Aircommerce</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font awesome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap-icon cdn  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <!-- css  -->
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Aircommerce</title>
+</head>
+
+<body>
+  <!--# HEADER START  -->
+  <header>
+    <!-- sub-nav  -->
+    <div class="sub-nav-container">
+      <nav class="sub-nav flex width-75vw">
+        <div class="social flex">
+          <div class="social-item"><i class="fa-brands fa-facebook"></i></div>
+          <div class="social-item"><i class="fa-brands fa-twitter"></i></div>
+          <div class="social-item">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="social-item"><i class="fa-brands fa-linkedin"></i></div>
+        </div>
+
+        <p>FREE SHIPPING THIS WEEK ORDER OVER - $55</p>
+
+        <div class="options flex">
+          <div class="currency">
+            <span>USD$ </span>
+            <select name="" id="" disabled="disabled"></select>
+          </div>
+          <div class="language">
+            <span>ENGLISH </span>
+            <select name="" id="" disabled="disabled"></select>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- main-nav  -->
+    <div class="main-nav-container">
+      <nav class="main-nav flex width-75vw">
+        <h2>AirCommerce</h2>
+        <div class="search-field">
+          <input type="text" placeholder="Enter your product name..." />
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <div class="user-icons flex">
+          <div class="user">
+            <i class="bi bi-person"></i>
+          </div>
+          <div class="user heart">
+            <i class="bi bi-heart"></i>
+            <span class="count">0</span>
+          </div>
+          <div class="user bag">
+            <i class="bi bi-handbag"></i>
+            <span class="count">0</span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- HEADER END  -->
+
+  <!--#  SECTION BANNER START  -->
+  <section class="banner">
+    <ul class="category flex">
+      <li>HOME</li>
+      <li>CATEGORIES</li>
+      <li>MEN'S</li>
+      <li>WOMENS</li>
+      <li>JWELERY</li>
+      <li>PERFUME</li>
+      <li>BLOG</li>
+      <li>HOT OFFERS</li>
+    </ul>
+
+    <div class="banner-wrapper flex">
+      <div class="banner-text">
+        <p class="trending">Trending Item</p>
+        <p class="heading">WOMEN'S LATEST FASHION SALE</p>
+        <p class="price">starting at $ <span>20</span>.00</p>
+        <a class="link" href="">SHOP NOW</a>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION BANNER END  -->
+
+  <!--# SECTION PRODUCT CATEGORY START -->
+  <section class="product-category">
+    <div class="category-item">
+      <div class="content">
+        <div class="category-image">
+          <img src="/images/icons/dress.svg" alt="" />
+        </div>
+        <div class="category-text">
+          <p class="name">DRESS & FROCK</p>
+          <p class="show">Show All</p>
+        </div>
+      </div>
+      <span class="amount">(53)</span>
+    </div>
+    <div class="category-item">
+      <div class="content">
+        <div class="category-image">
+          <img src="/images/icons/coat.svg" alt="" />
+        </div>
+        <div class="category-text">
+          <p class="name">WINTER WEAR</p>
+          <p class="show">Show All</p>
+        </div>
+      </div>
+      <span class="amount">(53)</span>
+    </div>
+    <div class="category-item">
+      <div class="content">
+        <div class="category-image">
+          <img src="/images/icons/glasses.svg" alt="" />
+        </div>
+        <div class="category-text">
+          <p class="name">GLASSES & LENS</p>
+          <p class="show">Show All</p>
+        </div>
+      </div>
+      <span class="amount">(53)</span>
+    </div>
+    <div class="category-item">
+      <div class="content">
+        <div class="category-image">
+          <img src="/images/icons/shorts.svg" alt="" />
+        </div>
+        <div class="category-text">
+          <p class="name">SHORTS AND JEANS</p>
+          <p class="show">Show All</p>
+        </div>
+      </div>
+      <span class="amount">(53)</span>
+    </div>
+  </section>
+
+  <!-- MAIN BODY  -->
+  <main>
+    <aside>
+      <!-- category  -->
+      <div class="aside-category">
+        <h3>CATEGORY</h3>
+        <div class="aside-category-item flex">
+          <img src="/images/icons/dress.svg" alt="" />
+          <p>Clothes</p>
+          <span class="add">+</span>
+        </div>
+        <div class="aside-category-item flex">
+          <img src="/images/icons/shoes.svg" alt="" />
+          <p>Footwear</p>
+          <span class="add">+</span>
+        </div>
+        <div class="aside-category-item flex">
+          <img src="/images/icons/jewelry.svg" alt="" />
+          <p>Jwellery</p>
+          <span class="add">+</span>
+        </div>
+        <div class="aside-category-item flex">
+          <img src="/images/icons/perfume.svg" alt="" />
+          <p>Perfume</p>
+          <span class="add">+</span>
+        </div>
+        <div class="aside-category-item flex">
+          <img src="/images/icons/cosmetics.svg" alt="" />
+          <p>Cosmetics</p>
+          <span class="add">+</span>
+        </div>
+        <div class="aside-category-item flex">
+          <img src="/images/icons/glasses.svg" alt="" />
+          <p>Glasses</p>
+          <span class="add">+</span>
+        </div>
+        <div class="aside-category-item flex">
+          <img src="/images/icons/bag.svg" alt="" />
+          <p>Bags</p>
+          <span class="add">+</span>
+        </div>
+      </div>
+      <!-- best sellers  -->
+      <div class="aside-bestsellers">
+        <h3>BEST SELLERS</h3>
+        <div class="aside-bestsellers-item">
+          <img src="/images/products/1.jpg" alt="" />
+          <div class="aside-bestsellers-text">
+            <p>Shoes</p>
+            <p>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <span>$17.00</span><strong>$7.00</strong>
+          </div>
+        </div>
+        <div class="aside-bestsellers-item">
+          <img src="/images/products/2.jpg" alt="" />
+          <div class="aside-bestsellers-text">
+            <p>Hoodie</p>
+            <p>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <span>$5.00</span><strong>$3.00</strong>
+          </div>
+        </div>
+        <div class="aside-bestsellers-item">
+          <img src="/images/products/3.jpg" alt="" />
+          <div class="aside-bestsellers-text">
+            <p>Sweat Shirt</p>
+            <p>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <span>$5.00</span><strong>$4.00</strong>
+          </div>
+        </div>
+        <div class="aside-bestsellers-item">
+          <img src="/images/products/4.jpg" alt="" />
+          <div class="aside-bestsellers-text">
+            <p>Hat</p>
+            <p>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <span>$15.00</span><strong>$12.00</strong>
+          </div>
+        </div>
+      </div>
+    </aside>
+    </div>
+    <!-- MAIN RIGHT  -->
+    <section class="right">
+      <div class="right-headers">
+        <h3>New Arrivals</h3>
+        <h3>Trending</h3>
+        <h3>Top Rated</h3>
+      </div>
+      <div class="right-sections">
+        <div class="arrivals">
+          <div class="arrivals-item">
+            <img src="/images/products/clothes-1.jpg" alt="" />
+            <div class="arrivals-item-text">
+              <h4>Relaxed Short Full Slee...</h4>
+              <p>Clothes</p>
+              <strong>$45.00</strong> <span>$12.00</span>
+            </div>
+          </div>
+          <div class="arrivals-item">
+            <img src="/images/products/clothes-2.jpg" alt="" />
+            <div class="arrivals-item-text">
+              <h4>Girls Pnk Embro Desig...</h4>
+              <p>Clothes</p>
+              <strong>$61.00</strong> <span>$9.00</span>
+            </div>
+          </div>
+          <div class="arrivals-item">
+            <img src="/images/products/clothes-3.jpg" alt="" />
+            <div class="arrivals-item-text">
+              <h4>Black Floral Wrap Midi...</h4>
+              <p>Clothes</p>
+              <strong>$76.00</strong> <span>$25.00</span>
+            </div>
+          </div>
+          <div class="arrivals-item">
+            <img src="/images/products/shirt-1.jpg" alt="" />
+            <div class="arrivals-item-text">
+              <h4>Pure Garment Dyed C...</h4>
+              <p>Mens Fashion</p>
+              <strong>$68.00</strong> <span>$31.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="trending">
+          <div class="arrivals-item">
+            <img src="/images/products/sports-1.jpg" alt="" />
+            <div class="arrivals-item-text">
+              <h4>Running & Trekking Sh...</h4>
+              <p>Sports</p>
+              <strong>$49.00</strong> <span>$15.00</span>
+            </div>
+          </div>
+          <div class="arrivals-item">
+            <img src="/images/products/sports-2.jpg" alt="" />
+            <div class="arrivals-item-text">
+              <h4>Trekking & Running Sh...</h4>
+              <p>Sports</p>
+              <strong>$78.00</strong> <span>$36.00</span>
+            </div>
+          </div>
+          <div class="arrivals-item">
+            <img src="/images/products/party-wear-1.jpg" alt="" />
+            <div class="arrivals-item-text">
+              <h4>Womens Party Wear S..</h4>
+              <p>Party Wear</p>
+              <strong>$94.00</strong> <span>$42.00</span>
+            </div>
+          </div>
+          <div class="arrivals-item">
+            <img src="/images/products/sports-3.jpg" alt="" />
+            <div class="arrivals-item-text">
+              <h4>Sports Claw Women's...</h4>
+              <p>Sports</p>
+              <strong>$54.00</strong> <span>$65.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="rated">
+          <div class="arrivals-item">
+            <img src="/images/products/watch-3.jpg" alt="" />
+            <div class="arrivals-item-text">
+              <h4>Pocket Watch Leather...</h4>
+              <p>Watches</p>
+              <strong>$50.00</strong> <span>$34.00</span>
+            </div>
+          </div>
+          <div class="arrivals-item">
+            <img src="/images/products/jewellery-3.jpg" alt="" />
+            <div class="arrivals-item-text">
+              <h4>Silver Deer Heart Neck...</h4>
+              <p>Jwellery</p>
+              <strong>$84.00</strong> <span>$30.00</span>
+            </div>
+          </div>
+          <div class="arrivals-item">
+            <img src="/images/products/perfume.jpg" alt="" />
+            <div class="arrivals-item-text">
+              <h4>Titan 100 MI Womens...</h4>
+              <p>Perfume</p>
+              <strong>$42.00</strong> <span>$10.00</span>
+            </div>
+          </div>
+          <div class="arrivals-item">
+            <img src="/images/products/belt.jpg" alt="" />
+            <div class="arrivals-item-text">
+              <h4>Men's Leather Reversi...</h4>
+              <p>Belt</p>
+              <strong>$24.00</strong> <span>$10.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal">
+        <h3>Deal Of The Day</h3>
+
+        <div class="deal-product">
+          <img src="/images/products/shampoo.jpg" alt="" />
+          <div class="deal-product-text">
+            <p>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+            </p>
+
+            <h4>SHAMPOO, CONDITIONER & FACEWASH PACKS</h4>
+            <p class="text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+              eum voluptas odit culpa ut id consequatur nulla beatae
+            </p>
+            <div class="deal-price">
+              <strong>$150.00</strong> <span>$200.00</span>
+            </div>
+            <a href="#">ADD TO CART</a>
+            <div class="sale-bar">
+              <div class="availability">
+                <span>ALREADY SOLD: <strong>20</strong></span>
+                <span>AVAILABLE: <strong>40</strong></span>
+              </div>
+              <div class="sale-bar-progress">
+                <span></span>
+              </div>
+            </div>
+            <p style="font-weight: bold; font-size: 1.3rem;">HURRY UP! OFFER ENDS IN:</p>
+            <div class="time-box">
+              <div class="time">
+                <span>360</span><br />
+                <span>Days</span>
+              </div>
+              <div class="time">
+                <span>24</span><br />
+                <span>Hours</span>
+              </div>
+              <div class="time">
+                <span>59</span><br />
+                <span>Min</span>
+              </div>
+              <div class="time">
+                <span>60</span><br />
+                <span>Sec</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="new-products">New Products</h3>
+      <div class="main-products">
+        <div class="main-products-item">
+          <img src="/images/products/jacket-3.jpg" alt="" />
+          <span class="product-class">JACKET</span>
+          <p class="product-name">Mens Winter Leathers Jackets</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <div class="pricing">
+            <strong>$48.00</strong> <span>$75.00</span>
+          </div>
+        </div>
+        <div class="main-products-item">
+          <img src="/images/products/shirt-1.jpg" alt="" />
+          <span class="product-class">SHIRT</span>
+          <p class="product-name">Pure Garment Dyed Cotton Shirt</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <div class="pricing">
+            <strong>$45.00</strong> <span>$56.00</span>
+          </div>
+        </div>
+        <div class="main-products-item">
+          <img src="/images/products/jacket-5.jpg" alt="" />
+          <span class="product-class">JACKET</span>
+          <p class="product-name">MEN Yarn Fleece Full-Zip Jacket</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <div class="pricing">
+            <strong>$58.00</strong> <span>$65.00</span>
+          </div>
+        </div>
+        <div class="main-products-item">
+          <img src="/images/products/clothes-3.jpg" alt="" />
+          <span class="product-class">SKIRT</span>
+          <p class="product-name">Black Floral Wrap Midi Skirt</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <div class="pricing">
+            <strong>$25.00</strong> <span>$35.00</span>
+          </div>
+        </div>
+        <div class="main-products-item">
+          <img src="/images/products/shoe-2.jpg" alt="" />
+          <span class="product-class">CASUAL</span>
+          <p class="product-name">Casual Men's Brown Shoes</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <div class="pricing">
+            <strong>$99.00</strong> <span>$105.00</span>
+          </div>
+        </div>
+        <div class="main-products-item">
+          <img src="/images/products/watch-3.jpg" alt="" />
+          <span class="product-class">WATCHES</span>
+          <p class="product-name">Pocket Watch Leather Pouch</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <div class="pricing">
+            <strong>$150.00</strong> <span>$170.00</span>
+          </div>
+        </div>
+        <div class="main-products-item">
+          <img src="/images/products/watch-1.jpg" alt="" />
+          <span class="product-class">WATCHES</span>
+          <p class="product-name">Smart Watche Vital Plus</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <div class="pricing">
+            <strong>$100.00</strong> <span>$120.00</span>
+          </div>
+        </div>
+        <div class="main-products-item">
+          <img src="/images/products/party-wear-1.jpg" alt="" />
+          <span class="product-class">PARTY WEAR</span>
+          <p class="product-name">Womens Party Wear Shoes</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <div class="pricing">
+            <strong>$25.00</strong> <span>$30.00</span>
+          </div>
+        </div>
+        <div class="main-products-item">
+          <img src="/images/products/jacket-1.jpg" alt="" />
+          <span class="product-class">JACKET</span>
+          <p class="product-name">Mens Winter Leathers Jackets</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <div class="pricing">
+            <strong>$32.00</strong> <span>$45.00</span>
+          </div>
+        </div>
+        <div class="main-products-item">
+          <img src="/images/products/sports-2.jpg" alt="" />
+          <span class="product-class">SPORTS</span>
+          <p class="product-name">Trekking & Running Shoes - Black</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <div class="pricing">
+            <strong>$58.00</strong> <span>$64.00</span>
+          </div>
+        </div>
+        <div class="main-products-item">
+          <img src="/images/products/shoe-1.jpg" alt="" />
+          <span class="product-class">FORMAL</span>
+          <p class="product-name">Men's Leather Formal Wear Shoes</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <div class="pricing">
+            <strong>$50.00</strong> <span>$65.00</span>
+          </div>
+        </div>
+        <div class="main-products-item">
+          <img src="/images/products/shorts-1.jpg" alt="" />
+          <span class="product-class">SHORTS</span>
+          <p class="product-name">Better Basics French Terry Sweatshorts</p>
+          <p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </p>
+          <div class="pricing">
+            <strong>$78.00</strong> <span>$85.00</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- T&S row  -->
+
+  <section class="t-s">
+    <div class="testimonial">
+      <h3>Testimonial</h3>
+      <div class="alan">
+        <img src="/images/banners/testimonial-1.jpg" alt="">
+        <strong>Alan Doe</strong>
+        <span>CEO & Founder Invision</span>
+        <i class="fa-solid fa-quote-left"></i>
+        <p>Lorem ipsum dolor sir<br>
+          amet consectetur<br>
+          Lorem ipsum dolor<br>
+          dolor sit amet</p>
+      </div>
+    </div>
+    <div class="image-center">
+      <img src="/images/banners/cta-banner.jpg" alt="">
+    </div>
+    <div class="services">
+      <h3>Our Services</h3>
+      <div class="service">
+        <div class="service-item">
+          <i class="fa-solid fa-ship"></i>
+          <div class="service-item-text">
+            <p>Worldwide Delivery</p>
+            <p>For Order Over $100</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <i class="fa-solid fa-ship"></i>
+          <div class="service-item-text">
+            <p>Worldwide Delivery</p>
+            <p>For Order Over $100</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <i class="fa-solid fa-ship"></i>
+          <div class="service-item-text">
+            <p>Worldwide Delivery</p>
+            <p>For Order Over $100</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <i class="fa-solid fa-ship"></i>
+          <div class="service-item-text">
+            <p>Worldwide Delivery</p>
+            <p>For Order Over $100</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <i class="fa-solid fa-ship"></i>
+          <div class="service-item-text">
+            <p>Worldwide Delivery</p>
+            <p>For Order Over $100</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION BLOG  -->
+  <section class="blog">
+    <div class="blog-item">
+      <img src="/images/banners/blog-1.jpg" alt="">
+      <div class="blog-text">
+        <span>Fashion</span>
+        <p>Clothes Retail KPIs 2021 Guide for Clothes Executives</p>
+        <p class="author">By Mr Admin / Apr 06, 2022</p>
+      </div>
+    </div>
+    <div class="blog-item">
+      <img src="/images/banners/blog-2.jpg" alt="">
+      <div class="blog-text">
+        <span>Fashion</span>
+        <p>Clothes Retail KPIs 2021 Guide for Clothes Executives</p>
+        <p class="author">By Mr Admin / Apr 06, 2022</p>
+      </div>
+    </div>
+    <div class="blog-item">
+      <img src="/images/banners/blog-3.jpg" alt="">
+      <div class="blog-text">
+        <span>Fashion</span>
+        <p>Clothes Retail KPIs 2021 Guide for Clothes Executives</p>
+        <p class="author">By Mr Admin / Apr 06, 2022</p>
+      </div>
+    </div>
+    <div class="blog-item">
+      <img src="/images/banners/blog-4.jpg" alt="">
+      <div class="blog-text">
+        <span>Fashion</span>
+        <p>Clothes Retail KPIs 2021 Guide for Clothes Executives</p>
+        <p class="author">By Mr Admin / Apr 06, 2022</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER  -->
+
+  <footer>
+    <section class="section1">
+      <h3>BRAND DIRECTORY</h3>
+      <div>
+        <strong>FASHION:</strong>
+        <a href="#">T-shirt</a> | <a href="#">Shirts</a> | <a href="#">Shorts & Jeans</a> | <a href="#">Dress &
+          Frock</a> | <a href="#">Innerwear</a> | <a href="#">Hosiery</a>
+      </div>
+      <div>
+        <strong>FOOTWEAR:</strong>
+        <a href="#">Sport</a> | <a href="#">Formal</a> | <a href="#">Boots</a> | <a href="#">Casual</a> | <a
+          href="#">Safety Shoes</a> | <a href="#">Party Wear Shoes</a> | <a href="#">Branded</a> | <a
+          href="#">Firstcopy</a> | <a href="#">Long Shoes</a>
+      </div>
+      <div>
+        <strong>JEWELLERY:</strong>
+        <a href="#">Necklace</a> | <a href="#">Earrings</a> | <a href="#">Couple Rings</a> | <a href="#">Pendants</a> |
+        <a href="#">Crystal</a> | <a href="#">Bangles</a> | <a href="#">Bracelets</a> | <a href="#">Nosepin</a> | <a
+          href="#">Chain</a> | <a href="#">Earrings</a> | <a href="#">Couple Rings</a>
+      </div>
+      <div>
+        <strong>COSMETICS:</strong>
+        <a href="#">Shampoo</a> | <a href="#">Bodywash</a> | <a href="#">Facewash</a> | <a href="#">Makeup Kit</a> |
+        <a href="#">Liner</a> | <a href="#">Lipstick</a> | <a href="#">Prefume</a> | <a href="#">Body Soap</a> | <a
+          href="#">Scrub</a> | <a href="#">Hair Gel</a> | <a href="#">Hair Colors</a> | <a href="#">Hair Dye</a> | <a
+          href="#">Sunscreen</a> | <a href="#">Skin Loson</a> | <a href="#">Liner</a> | <a href="#">Lipstick</a>
+      </div>
+    </section>
+
+    <section class="section2">
+      <ul>
+        <h3>POPULAR CATEGORIES</h3>
+        <li><a href="">Fashion</a></li>
+        <li><a href="">Electronic</a></li>
+        <li><a href="">Cosmetic</a></li>
+        <li><a href="">Health</a></li>
+        <li><a href="">Watches</a></li>
+      </ul>
+      <ul>
+        <h3>PRODUCTS</h3>
+        <li><a href="">Price Drop</a></li>
+        <li><a href="">New Products</a></li>
+        <li><a href="">Best Sales</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Sitemap</a></li>
+      </ul>
+      <ul>
+        <h3>OUR COMPANY</h3>
+        <li><a href="">Delivery</a></li>
+        <li><a href="">Legal Notice</a></li>
+        <li><a href="">Terms And Conditions</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Secure Payment</a></li>
+      </ul>
+      <ul>
+        <h3>Services</h3>
+        <li><a href="">Price Drop</a></li>
+        <li><a href="">New Products</a></li>
+        <li><a href="">Best Sales</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Sitemap</a></li>
+      </ul>
+      <ul>
+        <h3>CONTACT</h3>
+        <li>
+          <div class="icon"><i class="fa-solid fa-location-dot"></i></div><a href="">419 State 414 Rte
+            Beaver <br> Dams, New
+            York(NY),
+            14812,<br> USA</a>
+        </li>
+        <li>
+          <div class="icon"><i class="fa-solid fa-phone"></i></div></i><a href="">(607) 936-8058</a>
+        </li>
+        <li>
+          <div class="icon"><i class="fa-solid fa-envelope"></i></div></i><a href="">Example@Gmail.com</a>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="section3">
+      <img src="/images/banners/payment.png" alt="">
+      <p>Copyright &copy; AirCommerce All Rights Reserved.</p>
+    </section>
+  </footer>
+</body>
+
 </html>
