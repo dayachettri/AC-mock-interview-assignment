@@ -163,18 +163,22 @@ input::placeholder {
 }
 
 .banner-wrapper {
-  /* position: relative; */
-  background: url(/images/banners/banner-1.jpg);
+  position: relative;
+}
+
+.banner-wrapper img {
   max-width: 100%;
-  min-height: 50rem;
-  background-size: cover;
-  border-radius: 1rem;
+  border-radius: 10px;
+  height: auto;
 }
 
 .banner-text {
   max-width: 40rem;
   margin-left: 10rem;
-  margin-top: 5rem;
+  margin-top: 0;
+  position: absolute;
+
+  top: 25%;
 }
 
 .banner-text p {
