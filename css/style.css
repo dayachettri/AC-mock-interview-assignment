@@ -553,15 +553,25 @@ aside {
 }
 
 /* TESTIMONIALS AND SERVICES */
+
+.testimonial {
+  flex-basis: 300px;
+  height: max-content;
+  flex-shrink: 0;
+}
+.services {
+  flex-basis: 300px;
+  height: max-content;
+  flex-shrink: 0;
+}
 .t-s {
   display: flex;
   max-width: 90vw;
-  margin: auto;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-around;
   gap: 3rem;
   flex-shrink: 1;
-  margin-bottom: 5rem;
+  margin: 5rem auto;
 }
 
 .testimonial h3,
@@ -581,15 +591,48 @@ aside {
   gap: 0.8rem;
 }
 
+.alan strong {
+  color: darkslategray;
+}
+
+.alan p {
+  color: gray;
+}
+
 .alan i {
-  font-size: 3rem;
+  font-size: 2rem;
   color: salmon;
 }
 
 .alan img {
-  width: 50%;
+  width: 40%;
   border-radius: 50%;
   margin: 0 auto;
+}
+
+.discount {
+  text-align: center;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(242, 243, 245, 0.6);
+  padding: 3rem 6rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff8f9d;
+}
+
+.discount h3 {
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.discount strong {
+  color: #ff8f9d;
 }
 
 .service {
@@ -609,6 +652,17 @@ aside {
   margin-bottom: 1rem;
 }
 
+.service-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: darkslategray;
+}
+
+.service-term {
+  font-size: 1.4rem;
+  color: grey;
+}
+
 .service-item:last-child {
   margin-bottom: 0;
 }
@@ -617,7 +671,11 @@ aside {
   font-size: 3rem;
   color: salmon;
 }
-
+.image-center {
+  align-self: flex-end;
+  flex-shrink: 0;
+  position: relative;
+}
 .image-center img {
   border-radius: 10px;
   max-width: 100%;
