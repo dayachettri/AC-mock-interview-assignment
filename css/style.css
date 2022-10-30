@@ -282,9 +282,8 @@ aside {
 /* aside category  */
 .aside-category {
   padding: 2rem;
-  /* border: 1px solid rgb(232, 232, 232); */
+  border: 1px solid rgb(232, 232, 232);
   border-radius: 10px;
-  box-shadow: 0 0 3px rgb(68, 67, 67);
   margin-bottom: 2rem;
 }
 
@@ -319,8 +318,8 @@ aside {
 /* aside best sellers  */
 
 .aside-bestsellers {
+  border: 1px solid rgb(232, 232, 232);
   padding: 2rem;
-  box-shadow: 0 0 3px rgb(68, 67, 67);
   border-radius: 10px;
 }
 
@@ -802,4 +801,30 @@ footer .section3 p {
 
 .bottom-bar i {
   font-size: 2rem;
+}
+
+/* Transitions */
+
+.category-item,
+.aside-category,
+.aside-bestsellers,
+.arrivals-item,
+.deal-product,
+.main-products-item,
+.alan,
+.service,
+.blog-item img {
+  transition: 0.3s;
+}
+
+.category-item:hover,
+.aside-category:hover,
+.aside-bestsellers:hover,
+.arrivals-item:hover,
+.deal-product:hover,
+.main-products-item:hover,
+.alan:hover,
+.service:hover,
+.blog-item img:hover {
+  box-shadow: 0 0 10px #d8d3d3;
 }
