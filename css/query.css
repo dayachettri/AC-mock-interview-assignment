@@ -81,6 +81,9 @@
 }
 
 @media (max-width: 819px) and (min-width: 360px) {
+  .bottom-bar {
+    display: flex;
+  }
   .user-icons {
     display: none;
   }

@@ -782,3 +782,24 @@ footer .section3 p {
   font-weight: bold;
   margin-top: 1rem;
 }
+
+.bottom-bar {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  /* gap: 3rem; */
+  align-items: center;
+  background-color: #fffeff;
+  box-shadow: 0 0 5px #444;
+  padding: 1rem 2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 10%;
+  display: none;
+}
+
+.bottom-bar i {
+  font-size: 2rem;
+}
