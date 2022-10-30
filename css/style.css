@@ -163,32 +163,35 @@ input::placeholder {
 }
 
 .banner-wrapper {
-  position: relative;
+  /* position: relative; */
   background: url(/images/banners/banner-1.jpg);
   max-width: 100%;
-  min-height: 47rem;
+  min-height: 50rem;
   background-size: cover;
-  align-items: center;
   border-radius: 1rem;
 }
 
 .banner-text {
   max-width: 40rem;
   margin-left: 10rem;
+  margin-top: 5rem;
 }
 
 .banner-text p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-weight: bold;
 }
 
+.banner-text p:last-child {
+  margin-bottom: 0;
+}
 .banner-text .trending {
   font-size: 2.7rem;
   color: #ff8f9d;
 }
 
 .banner-text .heading {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .banner-text .price {
@@ -350,18 +353,11 @@ aside {
 
 /* SECTION RIGHT  */
 
-.right-headers {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  font-size: 1.7rem;
-  margin-bottom: 2rem;
-  margin-left: 4rem;
+.right-sections h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(232, 232, 232);
 }
-
-/* .arrivals {
-  display: flex;
-
-} */
 
 .right-sections {
   display: flex;
@@ -556,12 +552,9 @@ aside {
 
 .testimonial {
   flex-basis: 300px;
-  height: max-content;
   flex-shrink: 0;
 }
 .services {
-  flex-basis: 300px;
-  height: max-content;
   flex-shrink: 0;
 }
 .t-s {
@@ -570,8 +563,9 @@ aside {
   align-items: flex-start;
   justify-content: space-around;
   gap: 3rem;
-  flex-shrink: 1;
+  /* flex-shrink: 1; */
   margin: 5rem auto;
+  /* flex-wrap: wrap; */
 }
 
 .testimonial h3,
