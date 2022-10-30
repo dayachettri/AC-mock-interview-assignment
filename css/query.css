@@ -2,6 +2,11 @@
 
 /* tab  */
 @media (min-width: 820px) and (max-width: 1280px) {
+  .bottom-bar {
+    display: flex;
+    width: 50%;
+    left: 25%;
+  }
   .user-icons {
     display: none;
   }
